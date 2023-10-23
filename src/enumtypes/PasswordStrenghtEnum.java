@@ -20,10 +20,12 @@ public enum PasswordStrenghtEnum {
     //10 degerine ulaşabilmek için
 
 
+    //get
     public int getLevel() {
         return level;
     }
 
+    //const
     PasswordStrenghtEnum(int level) {//1---ERİŞİM TİPİNİ YAZMIYOR.kendisi zaten private
         this.level=level;
         //private başka classda kullanılmıyorsa neden yapıyoruz?

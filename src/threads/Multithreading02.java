@@ -3,7 +3,7 @@ package threads;
 public class Multithreading02 {
     //biletlerimtakip edebilmek için sayac oluşturuyorum
     // ikiside  aynı degeri görecek public
-    public static int counter=0;
+    public volatile static int counter=0;
     //İKİ THREAD DE AYNI ANDA AYNI KAYNAGI OKUMA VE YAZDIRMA VE
     // İŞLEMİ YAPMAYA ÇALIŞTIGI İÇİN İSTENMEYEN SONUÇLAR ELDE EDİLİR..
     //SIRAYLA CALIŞTIMAK İSTEYEBİLİRİZ....SYNCHRONİZE CEVİR COUNT METHODUNU
@@ -20,7 +20,7 @@ public class Multithreading02 {
                 for (int i=1;i<5;i++){
                     System.out.println();
                 }
-                //tom ne iş yapacak :cunt methodunu cagıracagız.(okuma ve artırma)
+                //tom ne iş yapacak :count methodunu cagıracagız.(okuma ve artırma)
            Counter01.count();
             }
         });

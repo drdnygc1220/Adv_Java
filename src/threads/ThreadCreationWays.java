@@ -52,7 +52,7 @@ public class ThreadCreationWays {
 
         //thread classının sleep methodu uyutuyor:exception fırlatır try cath ile
         //sleep methodu hangi thread calışırken kullanılırsa bu threadi bekletir
-       try {//kesin çözüm değil....
+       try {//kesin çözüm değil....(main) uyuyacak.
            Thread.sleep(5000);
        }catch (InterruptedException e){
            throw new RuntimeException(e);
