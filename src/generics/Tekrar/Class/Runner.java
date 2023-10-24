@@ -20,6 +20,9 @@ public class Runner {
         HashMap<String,Integer>map=new HashMap<>();
         map.put("java",123);
 
+        //--------GENERİCTWO---------
+        GenericTwo<Integer,String> maps=new GenericTwo<>(11,"java");
+        GenericTwo<String,String>map2=new GenericTwo<>("java","güzeldir..");
     }
 
 }
