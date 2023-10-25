@@ -7,7 +7,7 @@ public class ThreadPool {
     public static void main(String[] args) {
 
         //3 thread işe başlıyor burada performansı artırıyoruz fakat maliyeti düşürüyoruz.
-        ExecutorService service=Executors.newFixedThreadPool(3);
+        ExecutorService service=Executors.newFixedThreadPool(4);
         ThreadCreator kurye1=new ThreadCreator("A",5000);
         ThreadCreator kurye2=new ThreadCreator("B",9000);
         ThreadCreator kurye3=new ThreadCreator("C",7000);

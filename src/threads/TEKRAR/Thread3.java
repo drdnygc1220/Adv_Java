@@ -39,6 +39,7 @@ public class Thread3 {
 
 }
 class Counter1{
+    //synch. da işimi bitirene kadar anahtar bende
     public synchronized static void count(){
         for (int i=1;i<=1000;i++){
             Thread3.counter++;
